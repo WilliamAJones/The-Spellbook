@@ -24,6 +24,8 @@ function drawMySpells() {
   let template = ''
   mySpells.forEach(s => {
     template += s.getTemplate()
+
+    // template += s.getTemplate()
   })
   document.getElementById('my-spells').innerHTML = template
 }
@@ -35,6 +37,7 @@ export default class SpellController {
     _ss.addSubscriber('activeSpell', drawActive)
     _ss.addSubscriber('mySpells', drawMySpells)
     _ss.getApiSpells()
+    _ss.getMySpellsData()
   }
   setActive(url) {
     _ss.setActive(url)
@@ -42,5 +45,8 @@ export default class SpellController {
 
   learnSpell() {
     _ss.learnSpell()
+  }
+  removeFromSpellbook(name){
+    _ss.removeFromSpellbook(name)
   }
 }

@@ -1,0 +1,42 @@
+body{
+    background-image: url(./spellbook.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+    text-shadow: -1px -1px white;
+    font-family: 'Oldenburg', cursive;
+   
+}
+.head{
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 50%;
+}
+.list{
+    font-weight:bolder;
+    font-size:20px;
+    color:rgb(243, 7, 7);
+    text-shadow: -1px -1px black;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+.myspells{
+    font-weight:bolder;
+    font-size:30px;
+    color:rgb(243, 7, 7);
+    text-shadow: -1px -1px black;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+.card{
+    background-color:rgba(119, 5, 5, 0.452);
+    color: white;
+    align-items: center!important;
+    text-shadow: -1px -1px black;
+    /* max-height: 100%; */
+    border-top-color:rgba(7, 7, 7, 0.466);
+    border-right-color: rgba(7, 7, 7, 0.466);
+    border-right-style:solid;
+    border-top-style:solid;
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+    font-size:10;
+}

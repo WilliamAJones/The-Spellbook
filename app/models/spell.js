@@ -24,7 +24,9 @@ export default class Spell {
     <p>${this.description}</p>
   </div>
   <button onclick="app.controllers.spellController.learnSpell()">Learn</button>
-</div>`
+  <button onclick="app.controllers.spellController.removeFromSpellbook('${this.name}')">Remove From Spellbook</button>
+</div>
+`
 
   }
 }
